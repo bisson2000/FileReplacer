@@ -37,6 +37,8 @@
 *.vs
 *.qrc
 *.txt
+*.aps
 x64
 Release
 Test
+Resources
