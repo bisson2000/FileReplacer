@@ -9,11 +9,11 @@
 ** GNU Lesser General Public License Usage
 **
 ** This file may be used under the terms of the GNU Lesser General Public
-** License version 2.1 as published by the Free Software Foundation and
-** appearing in the file LICENSE.LGPL included in the packaging of this file.
+** License version 3 as published by the Free Software Foundation and
+** appearing in the file LICENSE included in the packaging of this file.
 ** Please review the following information to ensure the GNU Lesser General
-** Public License version 2.1 requirements will be met:
-** http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.
+** Public License version 3 requirements will be met:
+** https://www.gnu.org/licenses/gpl-3.0.fr.html.
 **
 **
 **************************************************************************/
@@ -216,7 +216,7 @@ std::string File::replaceStrings(const std::string& line, const std::string& toR
 	size_t position = newLine.find(toReplace);
 	while (position != std::string::npos) {
 		newLine.replace(position, toReplace.length(), replacement);
-		position = newLine.find(toReplace, position + 1);
+		position = newLine.find(toReplace, position + replacement.length());
 	}
 	return newLine;
 }
