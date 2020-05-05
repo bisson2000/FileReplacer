@@ -15,7 +15,7 @@
 ** Public License version 3 requirements will be met:
 ** https://www.gnu.org/licenses/gpl-3.0.fr.html.
 **
-**
+** 
 **************************************************************************/
 
 #include "QTFileReplacerV1.h"

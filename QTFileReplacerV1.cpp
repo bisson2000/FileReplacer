@@ -210,7 +210,11 @@ void QTFileReplacerV1::openExplorer() {
 
     //get FileName
     QString filters = "All File (*.*) ;; Text File (*.txt)";
-    QString fileName = QFileDialog::getOpenFileName(nullptr, "Choose file", QDir::homePath(), filters);
+    QString fileName;
+    if(pathEditor->text().isEmpty() || file_->getFileName().isEmpty())
+        fileName = QFileDialog::getOpenFileName(nullptr, "Choose file", QDir::homePath(), filters);
+    else
+        fileName = QFileDialog::getOpenFileName(nullptr, "Choose file", file_->getFileName(), filters);
 
     //If file can be opened
     if (fileName.isEmpty()) {
@@ -220,6 +224,8 @@ void QTFileReplacerV1::openExplorer() {
         return;
     }
 
+    //set fileName
+    file_->setFileName(fileName);
     //Set PathEditor text
     pathEditor->setText(fileName);
 
