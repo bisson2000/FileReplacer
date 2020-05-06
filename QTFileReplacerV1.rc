@@ -68,7 +68,7 @@ BEGIN
         BLOCK "100904b0"
         BEGIN
             VALUE "CompanyName", "Paul-Andre Bisson"
-            VALUE "FileDescription", "Modifies caracters of files with other caracters"
+            VALUE "FileDescription", "FileReplacer"
             VALUE "FileVersion", "1.0.0.1"
             VALUE "InternalName", "QTFileRe.exe"
             VALUE "LegalCopyright", "Copyright (C) 2020"

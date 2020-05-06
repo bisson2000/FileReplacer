@@ -38,6 +38,7 @@
 *.qrc
 *.txt
 *.aps
+*.zip
 x64
 Release
 Test
@@ -45,6 +46,7 @@ Resources
 FileReplacer
 
 #certificates
-.pfx
-.cer
-.pvk
+*.pfx
+*.cer
+*.pvk
+*.bat

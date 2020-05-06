@@ -24,7 +24,6 @@
 #define QTFILEREPLACEV1_H
 
 
-#include <QtWidgets/QMainWindow>
 #include "ui_QTFileReplacerV1.h"
 
 #include <QDesktopWidget>
@@ -33,9 +32,9 @@
 #include <QMessageBox>
 #include <QPushButton>
 #include <QWidget>>
-#include <QSize>
 #include <QSizePolicy>
-#include <QBoxLayout>
+#include <QHBoxLayout>
+#include <QVBoxLayout>
 #include <QT>
 #include <QLabel>
 #include <QTextEdit>
@@ -44,7 +43,6 @@
 
 //File related
 #include <QDir>
-#include <QFileInfo>
 #include <QFileDialog>
 #include <QFile>
 
